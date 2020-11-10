@@ -45,7 +45,7 @@
 ## Installation
 1) Add Serverless Sequelize Migrations to your project:
 ```
-npm install --save serverless-sequelize-migrations
+npm install --save sspuni/serverless-sequelize-migrations
 ```
 
 2) Inside your serverless.yml file add the following entry to the plugins section (if there is no plugin section in the file you'll need to add it):
