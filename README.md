@@ -79,6 +79,23 @@ provider:
   environment:
     DB_CONNECTION_URL: database_dialect://database_username:database_password@database_host:database_port/database_name`
 ```
+Or by setting custom configuration specifically for *serverless-sequelize-migrations* plugin
+```
+custom:
+  sequelizeMigrations:
+    DB_DIALECT: 'database_dialect' /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
+    DB_NAME: 'database_name'
+    DB_USERNAME: 'database_username'
+    DB_PASSWORD: 'database_password'
+    DB_HOST: 'database_host'
+    DB_PORT: 'database_port'
+```
+or by using DB_CONNECTION_URL as a custom config specifically for *serverless-sequelize-migrations* plugin
+```
+custom:
+  sequelizeMigrations:
+    DB_CONNECTION_URL: database_dialect://database_username:database_password@database_host:database_port/database_name`
+```
 Replace the variables with the information of your own database.
 
 Obs: This plugin does not have support to create the database itself.
